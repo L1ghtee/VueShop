@@ -31,5 +31,5 @@ const route = useRoute();
 const selectedProduct = computed(() => {
    return store.products.find((item)=> item.id === Number(route.params.id))
  })
-// 18:40
+// 24:45
 </script>
