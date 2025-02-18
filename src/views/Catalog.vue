@@ -27,9 +27,12 @@ import { useRouter } from 'vue-router';
 
 const store = productsStore();
 const router = useRouter();
+
+
 const goToProductPage = (id) => {
   router.push({ name: 'ProducView', params: { id } })
 }
+
 onMounted(async () => {
   await store.fetchProductsFromDB()
 
@@ -38,7 +41,7 @@ onMounted(async () => {
 <style scoped>
 .products-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
