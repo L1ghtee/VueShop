@@ -33,6 +33,7 @@ const goToProductPage = (id) => {
   router.push({ name: 'ProducView', params: { id } })
 }
 
+
 onMounted(async () => {
   await store.fetchProductsFromDB()
 
